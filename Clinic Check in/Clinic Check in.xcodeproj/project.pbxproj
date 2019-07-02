@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1544612093501E00EAD561 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1544602093501E00EAD561 /* LoginViewController.swift */; };
+		4D27125020A566FE00BE8651 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D27124F20A566FE00BE8651 /* ContactTableViewCell.swift */; };
+		4D4241B920889C7300C096DD /* ChargingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4241B820889C7300C096DD /* ChargingController.swift */; };
+		4D88C5FF20A2D6190040B4DD /* ContactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D88C5FE20A2D6190040B4DD /* ContactController.swift */; };
+		4DA7919720972B1900BC3B76 /* UserSingletonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7919620972B1900BC3B76 /* UserSingletonModel.swift */; };
+		4DA79199209732F900BC3B76 /* sessionEndController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA79198209732F900BC3B76 /* sessionEndController.swift */; };
+		4DB8B4682084C18A007FE703 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8B4672084C18A007FE703 /* ViewControllerTableViewCell.swift */; };
+		4DC631FD20809BD200414EB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC631FC20809BD200414EB1 /* AppDelegate.swift */; };
+		4DC631FF20809BD200414EB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC631FE20809BD200414EB1 /* ViewController.swift */; };
+		4DC6320220809BD200414EB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6320020809BD200414EB1 /* Main.storyboard */; };
+		4DC6320420809BD200414EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6320320809BD200414EB1 /* Assets.xcassets */; };
+		4DC6320720809BD200414EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC6320520809BD200414EB1 /* LaunchScreen.storyboard */; };
+		4DC6321220809BD200414EB1 /* Clinic_Check_inTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6321120809BD200414EB1 /* Clinic_Check_inTests.swift */; };
+		4DC6321D20809BD200414EB1 /* Clinic_Check_inUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6321C20809BD200414EB1 /* Clinic_Check_inUITests.swift */; };
+		4DCE441420AD6CC2002964A0 /* cardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE441320AD6CC2002964A0 /* cardView.swift */; };
+		6749936C4F21EA8D2C30FC33 /* Pods_Clinic_Check_in.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97762708D823798E4FDA767D /* Pods_Clinic_Check_in.framework */; };
+		7D11D153B204E24768D93DB7 /* Pods_Clinic_Check_inTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248C0B70C4C785204C1BF55A /* Pods_Clinic_Check_inTests.framework */; };
+		D507077120D78206009EE470 /* LifeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D507077020D78206009EE470 /* LifeEventTableViewCell.swift */; };
+		D50E8D0E20D24B010096B71D /* UpdateYourMedicationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E8D0D20D24B010096B71D /* UpdateYourMedicationsViewController.swift */; };
+		D50E8D1020D24DC40096B71D /* UpdateYourMedicationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50E8D0F20D24DC40096B71D /* UpdateYourMedicationsTableViewCell.swift */; };
+		D52AA4DB20EC8AA900A6F78F /* PharmacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AA4DA20EC8AA900A6F78F /* PharmacyViewController.swift */; };
+		D52AA4DD20EC8B0100A6F78F /* PharmacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AA4DC20EC8B0100A6F78F /* PharmacyTableViewCell.swift */; };
+		D52AA4E020ECB15D00A6F78F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52AA4DF20ECB15D00A6F78F /* ProfileViewController.swift */; };
+		D536186320EB6B1E00356AFA /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D536186220EB6B1E00356AFA /* GoalViewController.swift */; };
+		D536186520EB6B3100356AFA /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D536186420EB6B3100356AFA /* GoalTableViewCell.swift */; };
+		D541D55D20CE8DA100D760B7 /* AllergicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D541D55C20CE8DA100D760B7 /* AllergicViewController.swift */; };
+		D541D55F20CE930100D760B7 /* AllergicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D541D55E20CE930100D760B7 /* AllergicTableViewCell.swift */; };
+		D59B856920EA380E0072C904 /* ScreeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B856820EA380E0072C904 /* ScreeningViewController.swift */; };
+		D59B856B20EA38250072C904 /* ScreeningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59B856A20EA38250072C904 /* ScreeningTableViewCell.swift */; };
+		D59C729D20CA94B7003657C3 /* ReasonForVisitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59C729C20CA94B7003657C3 /* ReasonForVisitViewController.swift */; };
+		D5A35FB920E2279000EAA30F /* ScreeningListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A35FB820E2279000EAA30F /* ScreeningListViewController.swift */; };
+		D5A35FBB20E2280A00EAA30F /* ScreeningListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A35FBA20E2280A00EAA30F /* ScreeningListTableViewCell.swift */; };
+		D5BEF1F320D3982100A08247 /* LifeEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEF1F220D3982100A08247 /* LifeEventViewController.swift */; };
+		D5CF820E20E0CF62008539D7 /* FinanceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF820D20E0CF62008539D7 /* FinanceHomeViewController.swift */; };
+		D5CF821420E0FC2E008539D7 /* FinancialHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CF821320E0FC2E008539D7 /* FinancialHomeTableViewCell.swift */; };
+		D5FF8CA620EF890500BD17F9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF8CA520EF890500BD17F9 /* main.swift */; };
+		D5FF8CA820EF89AD00BD17F9 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FF8CA720EF89AD00BD17F9 /* UIApplication.swift */; };
+		FF7D79D7FC17B9335F92C815 /* Pods_Clinic_Check_inUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5264C3C0172A4A99B8A8D399 /* Pods_Clinic_Check_inUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DC6320E20809BD200414EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC631F120809BD200414EB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC631F820809BD200414EB1;
+			remoteInfo = "Clinic Check in";
+		};
+		4DC6321920809BD200414EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DC631F120809BD200414EB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DC631F820809BD200414EB1;
+			remoteInfo = "Clinic Check in";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A6B2F7C40B45B18DE5A4343 /* Pods-Clinic Check in.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic Check in.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic Check in/Pods-Clinic Check in.debug.xcconfig"; sourceTree = "<group>"; };
+		248C0B70C4C785204C1BF55A /* Pods_Clinic_Check_inTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Check_inTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D15445D209329B500EAD561 /* CountryList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CountryList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1544602093501E00EAD561 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4D27124F20A566FE00BE8651 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		4D4241B820889C7300C096DD /* ChargingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingController.swift; sourceTree = "<group>"; };
+		4D88C5FE20A2D6190040B4DD /* ContactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactController.swift; sourceTree = "<group>"; };
+		4DA7919620972B1900BC3B76 /* UserSingletonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingletonModel.swift; sourceTree = "<group>"; };
+		4DA79198209732F900BC3B76 /* sessionEndController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionEndController.swift; sourceTree = "<group>"; };
+		4DB8B4672084C18A007FE703 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		4DC631F920809BD200414EB1 /* Clinic Check in.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clinic Check in.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC631FC20809BD200414EB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DC631FE20809BD200414EB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4DC6320120809BD200414EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4DC6320320809BD200414EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DC6320620809BD200414EB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4DC6320820809BD200414EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC6320D20809BD200414EB1 /* Clinic Check inTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clinic Check inTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC6321120809BD200414EB1 /* Clinic_Check_inTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinic_Check_inTests.swift; sourceTree = "<group>"; };
+		4DC6321320809BD200414EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC6321820809BD200414EB1 /* Clinic Check inUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clinic Check inUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC6321C20809BD200414EB1 /* Clinic_Check_inUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clinic_Check_inUITests.swift; sourceTree = "<group>"; };
+		4DC6321E20809BD200414EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCE441320AD6CC2002964A0 /* cardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardView.swift; sourceTree = "<group>"; };
+		5264C3C0172A4A99B8A8D399 /* Pods_Clinic_Check_inUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Check_inUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76989C67A7B2DC79CA698770 /* Pods-Clinic Check inUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic Check inUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic Check inUITests/Pods-Clinic Check inUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		97762708D823798E4FDA767D /* Pods_Clinic_Check_in.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Clinic_Check_in.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFE2D94A8B4817C9CE8C023 /* Pods-Clinic Check in.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic Check in.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic Check in/Pods-Clinic Check in.release.xcconfig"; sourceTree = "<group>"; };
+		9FBDEB95E6F31BB9D18CDACB /* Pods-Clinic Check inUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic Check inUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic Check inUITests/Pods-Clinic Check inUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6D527F17D3E8708C89772D7 /* Pods-Clinic Check inTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic Check inTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic Check inTests/Pods-Clinic Check inTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D507077020D78206009EE470 /* LifeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEventTableViewCell.swift; sourceTree = "<group>"; };
+		D50E8D0D20D24B010096B71D /* UpdateYourMedicationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateYourMedicationsViewController.swift; sourceTree = "<group>"; };
+		D50E8D0F20D24DC40096B71D /* UpdateYourMedicationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateYourMedicationsTableViewCell.swift; sourceTree = "<group>"; };
+		D52AA4DA20EC8AA900A6F78F /* PharmacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyViewController.swift; sourceTree = "<group>"; };
+		D52AA4DC20EC8B0100A6F78F /* PharmacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyTableViewCell.swift; sourceTree = "<group>"; };
+		D52AA4DF20ECB15D00A6F78F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D536186220EB6B1E00356AFA /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		D536186420EB6B3100356AFA /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		D541D55C20CE8DA100D760B7 /* AllergicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergicViewController.swift; sourceTree = "<group>"; };
+		D541D55E20CE930100D760B7 /* AllergicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergicTableViewCell.swift; sourceTree = "<group>"; };
+		D59B856820EA380E0072C904 /* ScreeningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningViewController.swift; sourceTree = "<group>"; };
+		D59B856A20EA38250072C904 /* ScreeningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningTableViewCell.swift; sourceTree = "<group>"; };
+		D59C729C20CA94B7003657C3 /* ReasonForVisitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReasonForVisitViewController.swift; sourceTree = "<group>"; };
+		D5A35FB820E2279000EAA30F /* ScreeningListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningListViewController.swift; sourceTree = "<group>"; };
+		D5A35FBA20E2280A00EAA30F /* ScreeningListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreeningListTableViewCell.swift; sourceTree = "<group>"; };
+		D5BEF1F220D3982100A08247 /* LifeEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEventViewController.swift; sourceTree = "<group>"; };
+		D5CF820D20E0CF62008539D7 /* FinanceHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceHomeViewController.swift; sourceTree = "<group>"; };
+		D5CF821320E0FC2E008539D7 /* FinancialHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialHomeTableViewCell.swift; sourceTree = "<group>"; };
+		D5FF8CA520EF890500BD17F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D5FF8CA720EF89AD00BD17F9 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		E9A7471AD1E9440A09FF3C19 /* Pods-Clinic Check inTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clinic Check inTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Clinic Check inTests/Pods-Clinic Check inTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC631F620809BD200414EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6749936C4F21EA8D2C30FC33 /* Pods_Clinic_Check_in.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC6320A20809BD200414EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D11D153B204E24768D93DB7 /* Pods_Clinic_Check_inTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC6321520809BD200414EB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7D79D7FC17B9335F92C815 /* Pods_Clinic_Check_inUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D52C87F4D8CA9074D9E5472 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D15445D209329B500EAD561 /* CountryList.framework */,
+				97762708D823798E4FDA767D /* Pods_Clinic_Check_in.framework */,
+				248C0B70C4C785204C1BF55A /* Pods_Clinic_Check_inTests.framework */,
+				5264C3C0172A4A99B8A8D399 /* Pods_Clinic_Check_inUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DC631F020809BD200414EB1 = {
+			isa = PBXGroup;
+			children = (
+				4DC631FB20809BD200414EB1 /* Clinic Check in */,
+				4DC6321020809BD200414EB1 /* Clinic Check inTests */,
+				4DC6321B20809BD200414EB1 /* Clinic Check inUITests */,
+				4DC631FA20809BD200414EB1 /* Products */,
+				A1CB4FC743AB96A3CE70B2A3 /* Pods */,
+				4D52C87F4D8CA9074D9E5472 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC631FA20809BD200414EB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC631F920809BD200414EB1 /* Clinic Check in.app */,
+				4DC6320D20809BD200414EB1 /* Clinic Check inTests.xctest */,
+				4DC6321820809BD200414EB1 /* Clinic Check inUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DC631FB20809BD200414EB1 /* Clinic Check in */ = {
+			isa = PBXGroup;
+			children = (
+				D52AA4DE20ECAF4500A6F78F /* Profile */,
+				D536186120EB6AF100356AFA /* Goal */,
+				D536186020EB65A200356AFA /* Pharmacy */,
+				D535B0EC20E9EFE700BE5509 /* Screening */,
+				D535B0EB20E9EFBF00BE5509 /* Finance */,
+				D535B0EA20E9EF6300BE5509 /* LifeEvent */,
+				D535B0E920E9EF3800BE5509 /* MedicationUpdate */,
+				D535B0E820E9EF1800BE5509 /* Allergic */,
+				D535B0E720E9EE7400BE5509 /* Contact */,
+				4DC631FC20809BD200414EB1 /* AppDelegate.swift */,
+				4DC631FE20809BD200414EB1 /* ViewController.swift */,
+				4DC6320020809BD200414EB1 /* Main.storyboard */,
+				4DCE441320AD6CC2002964A0 /* cardView.swift */,
+				4DC6320320809BD200414EB1 /* Assets.xcassets */,
+				4DC6320520809BD200414EB1 /* LaunchScreen.storyboard */,
+				4DC6320820809BD200414EB1 /* Info.plist */,
+				4DB8B4672084C18A007FE703 /* ViewControllerTableViewCell.swift */,
+				4D4241B820889C7300C096DD /* ChargingController.swift */,
+				4D1544602093501E00EAD561 /* LoginViewController.swift */,
+				4DA7919620972B1900BC3B76 /* UserSingletonModel.swift */,
+				4DA79198209732F900BC3B76 /* sessionEndController.swift */,
+				D59C729C20CA94B7003657C3 /* ReasonForVisitViewController.swift */,
+				D5FF8CA520EF890500BD17F9 /* main.swift */,
+				D5FF8CA720EF89AD00BD17F9 /* UIApplication.swift */,
+			);
+			path = "Clinic Check in";
+			sourceTree = "<group>";
+		};
+		4DC6321020809BD200414EB1 /* Clinic Check inTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC6321120809BD200414EB1 /* Clinic_Check_inTests.swift */,
+				4DC6321320809BD200414EB1 /* Info.plist */,
+			);
+			path = "Clinic Check inTests";
+			sourceTree = "<group>";
+		};
+		4DC6321B20809BD200414EB1 /* Clinic Check inUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4DC6321C20809BD200414EB1 /* Clinic_Check_inUITests.swift */,
+				4DC6321E20809BD200414EB1 /* Info.plist */,
+			);
+			path = "Clinic Check inUITests";
+			sourceTree = "<group>";
+		};
+		A1CB4FC743AB96A3CE70B2A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A6B2F7C40B45B18DE5A4343 /* Pods-Clinic Check in.debug.xcconfig */,
+				9EFE2D94A8B4817C9CE8C023 /* Pods-Clinic Check in.release.xcconfig */,
+				A6D527F17D3E8708C89772D7 /* Pods-Clinic Check inTests.debug.xcconfig */,
+				E9A7471AD1E9440A09FF3C19 /* Pods-Clinic Check inTests.release.xcconfig */,
+				76989C67A7B2DC79CA698770 /* Pods-Clinic Check inUITests.debug.xcconfig */,
+				9FBDEB95E6F31BB9D18CDACB /* Pods-Clinic Check inUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D52AA4DE20ECAF4500A6F78F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D52AA4DF20ECB15D00A6F78F /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D535B0E720E9EE7400BE5509 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				4D27124F20A566FE00BE8651 /* ContactTableViewCell.swift */,
+				4D88C5FE20A2D6190040B4DD /* ContactController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		D535B0E820E9EF1800BE5509 /* Allergic */ = {
+			isa = PBXGroup;
+			children = (
+				D541D55E20CE930100D760B7 /* AllergicTableViewCell.swift */,
+				D541D55C20CE8DA100D760B7 /* AllergicViewController.swift */,
+			);
+			path = Allergic;
+			sourceTree = "<group>";
+		};
+		D535B0E920E9EF3800BE5509 /* MedicationUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				D50E8D0F20D24DC40096B71D /* UpdateYourMedicationsTableViewCell.swift */,
+				D50E8D0D20D24B010096B71D /* UpdateYourMedicationsViewController.swift */,
+			);
+			path = MedicationUpdate;
+			sourceTree = "<group>";
+		};
+		D535B0EA20E9EF6300BE5509 /* LifeEvent */ = {
+			isa = PBXGroup;
+			children = (
+				D507077020D78206009EE470 /* LifeEventTableViewCell.swift */,
+				D5BEF1F220D3982100A08247 /* LifeEventViewController.swift */,
+			);
+			path = LifeEvent;
+			sourceTree = "<group>";
+		};
+		D535B0EB20E9EFBF00BE5509 /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+				D5CF821320E0FC2E008539D7 /* FinancialHomeTableViewCell.swift */,
+				D5CF820D20E0CF62008539D7 /* FinanceHomeViewController.swift */,
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		D535B0EC20E9EFE700BE5509 /* Screening */ = {
+			isa = PBXGroup;
+			children = (
+				D5A35FBA20E2280A00EAA30F /* ScreeningListTableViewCell.swift */,
+				D5A35FB820E2279000EAA30F /* ScreeningListViewController.swift */,
+				D59B856820EA380E0072C904 /* ScreeningViewController.swift */,
+				D59B856A20EA38250072C904 /* ScreeningTableViewCell.swift */,
+			);
+			path = Screening;
+			sourceTree = "<group>";
+		};
+		D536186020EB65A200356AFA /* Pharmacy */ = {
+			isa = PBXGroup;
+			children = (
+				D52AA4DA20EC8AA900A6F78F /* PharmacyViewController.swift */,
+				D52AA4DC20EC8B0100A6F78F /* PharmacyTableViewCell.swift */,
+			);
+			path = Pharmacy;
+			sourceTree = "<group>";
+		};
+		D536186120EB6AF100356AFA /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				D536186220EB6B1E00356AFA /* GoalViewController.swift */,
+				D536186420EB6B3100356AFA /* GoalTableViewCell.swift */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC631F820809BD200414EB1 /* Clinic Check in */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC6322120809BD200414EB1 /* Build configuration list for PBXNativeTarget "Clinic Check in" */;
+			buildPhases = (
+				771BA8C05B514E245D4E2103 /* [CP] Check Pods Manifest.lock */,
+				4DC631F520809BD200414EB1 /* Sources */,
+				4DC631F620809BD200414EB1 /* Frameworks */,
+				4DC631F720809BD200414EB1 /* Resources */,
+				BDE4204627EDBD76FDB15A4F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clinic Check in";
+			productName = "Clinic Check in";
+			productReference = 4DC631F920809BD200414EB1 /* Clinic Check in.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DC6320C20809BD200414EB1 /* Clinic Check inTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC6322420809BD200414EB1 /* Build configuration list for PBXNativeTarget "Clinic Check inTests" */;
+			buildPhases = (
+				7CEAB85E002C317EB84185BE /* [CP] Check Pods Manifest.lock */,
+				4DC6320920809BD200414EB1 /* Sources */,
+				4DC6320A20809BD200414EB1 /* Frameworks */,
+				4DC6320B20809BD200414EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC6320F20809BD200414EB1 /* PBXTargetDependency */,
+			);
+			name = "Clinic Check inTests";
+			productName = "Clinic Check inTests";
+			productReference = 4DC6320D20809BD200414EB1 /* Clinic Check inTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4DC6321720809BD200414EB1 /* Clinic Check inUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC6322720809BD200414EB1 /* Build configuration list for PBXNativeTarget "Clinic Check inUITests" */;
+			buildPhases = (
+				FC65649283E9688F2C4A34E6 /* [CP] Check Pods Manifest.lock */,
+				4DC6321420809BD200414EB1 /* Sources */,
+				4DC6321520809BD200414EB1 /* Frameworks */,
+				4DC6321620809BD200414EB1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DC6321A20809BD200414EB1 /* PBXTargetDependency */,
+			);
+			name = "Clinic Check inUITests";
+			productName = "Clinic Check inUITests";
+			productReference = 4DC6321820809BD200414EB1 /* Clinic Check inUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC631F120809BD200414EB1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Savant care";
+				TargetAttributes = {
+					4DC631F820809BD200414EB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4DC6320C20809BD200414EB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DC631F820809BD200414EB1;
+					};
+					4DC6321720809BD200414EB1 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4DC631F820809BD200414EB1;
+					};
+				};
+			};
+			buildConfigurationList = 4DC631F420809BD200414EB1 /* Build configuration list for PBXProject "Clinic Check in" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DC631F020809BD200414EB1;
+			productRefGroup = 4DC631FA20809BD200414EB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC631F820809BD200414EB1 /* Clinic Check in */,
+				4DC6320C20809BD200414EB1 /* Clinic Check inTests */,
+				4DC6321720809BD200414EB1 /* Clinic Check inUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC631F720809BD200414EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC6320720809BD200414EB1 /* LaunchScreen.storyboard in Resources */,
+				4DC6320420809BD200414EB1 /* Assets.xcassets in Resources */,
+				4DC6320220809BD200414EB1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC6320B20809BD200414EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC6321620809BD200414EB1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		771BA8C05B514E245D4E2103 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clinic Check in-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CEAB85E002C317EB84185BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clinic Check inTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE4204627EDBD76FDB15A4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Clinic Check in/Pods-Clinic Check in-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/MRCountryPicker/MRCountryPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRCountryPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Clinic Check in/Pods-Clinic Check in-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC65649283E9688F2C4A34E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Clinic Check inUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC631F520809BD200414EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FF8CA820EF89AD00BD17F9 /* UIApplication.swift in Sources */,
+				D507077120D78206009EE470 /* LifeEventTableViewCell.swift in Sources */,
+				4DCE441420AD6CC2002964A0 /* cardView.swift in Sources */,
+				D5CF820E20E0CF62008539D7 /* FinanceHomeViewController.swift in Sources */,
+				D536186520EB6B3100356AFA /* GoalTableViewCell.swift in Sources */,
+				4D1544612093501E00EAD561 /* LoginViewController.swift in Sources */,
+				D59C729D20CA94B7003657C3 /* ReasonForVisitViewController.swift in Sources */,
+				D59B856920EA380E0072C904 /* ScreeningViewController.swift in Sources */,
+				D52AA4DD20EC8B0100A6F78F /* PharmacyTableViewCell.swift in Sources */,
+				4DC631FF20809BD200414EB1 /* ViewController.swift in Sources */,
+				4D4241B920889C7300C096DD /* ChargingController.swift in Sources */,
+				D5A35FB920E2279000EAA30F /* ScreeningListViewController.swift in Sources */,
+				D5FF8CA620EF890500BD17F9 /* main.swift in Sources */,
+				4DA79199209732F900BC3B76 /* sessionEndController.swift in Sources */,
+				D50E8D1020D24DC40096B71D /* UpdateYourMedicationsTableViewCell.swift in Sources */,
+				4D88C5FF20A2D6190040B4DD /* ContactController.swift in Sources */,
+				D52AA4DB20EC8AA900A6F78F /* PharmacyViewController.swift in Sources */,
+				D59B856B20EA38250072C904 /* ScreeningTableViewCell.swift in Sources */,
+				D5CF821420E0FC2E008539D7 /* FinancialHomeTableViewCell.swift in Sources */,
+				D50E8D0E20D24B010096B71D /* UpdateYourMedicationsViewController.swift in Sources */,
+				D52AA4E020ECB15D00A6F78F /* ProfileViewController.swift in Sources */,
+				D5BEF1F320D3982100A08247 /* LifeEventViewController.swift in Sources */,
+				D5A35FBB20E2280A00EAA30F /* ScreeningListTableViewCell.swift in Sources */,
+				D541D55F20CE930100D760B7 /* AllergicTableViewCell.swift in Sources */,
+				4D27125020A566FE00BE8651 /* ContactTableViewCell.swift in Sources */,
+				4DA7919720972B1900BC3B76 /* UserSingletonModel.swift in Sources */,
+				4DC631FD20809BD200414EB1 /* AppDelegate.swift in Sources */,
+				D536186320EB6B1E00356AFA /* GoalViewController.swift in Sources */,
+				D541D55D20CE8DA100D760B7 /* AllergicViewController.swift in Sources */,
+				4DB8B4682084C18A007FE703 /* ViewControllerTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC6320920809BD200414EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC6321220809BD200414EB1 /* Clinic_Check_inTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DC6321420809BD200414EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC6321D20809BD200414EB1 /* Clinic_Check_inUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DC6320F20809BD200414EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC631F820809BD200414EB1 /* Clinic Check in */;
+			targetProxy = 4DC6320E20809BD200414EB1 /* PBXContainerItemProxy */;
+		};
+		4DC6321A20809BD200414EB1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DC631F820809BD200414EB1 /* Clinic Check in */;
+			targetProxy = 4DC6321920809BD200414EB1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DC6320020809BD200414EB1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC6320120809BD200414EB1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DC6320520809BD200414EB1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC6320620809BD200414EB1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DC6321F20809BD200414EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DC6322020809BD200414EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DC6322220809BD200414EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6B2F7C40B45B18DE5A4343 /* Pods-Clinic Check in.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SL85U59EL;
+				INFOPLIST_FILE = "Clinic Check in/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savantcareinc-grmtech.com.Clinic-Check-in";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4DC6322320809BD200414EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFE2D94A8B4817C9CE8C023 /* Pods-Clinic Check in.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SL85U59EL;
+				INFOPLIST_FILE = "Clinic Check in/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savantcareinc-grmtech.com.Clinic-Check-in";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		4DC6322520809BD200414EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D527F17D3E8708C89772D7 /* Pods-Clinic Check inTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SL85U59EL;
+				INFOPLIST_FILE = "Clinic Check inTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savantcareinc-grmtech.com.Clinic-Check-inTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clinic Check in.app/Clinic Check in";
+			};
+			name = Debug;
+		};
+		4DC6322620809BD200414EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A7471AD1E9440A09FF3C19 /* Pods-Clinic Check inTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SL85U59EL;
+				INFOPLIST_FILE = "Clinic Check inTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savantcareinc-grmtech.com.Clinic-Check-inTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clinic Check in.app/Clinic Check in";
+			};
+			name = Release;
+		};
+		4DC6322820809BD200414EB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76989C67A7B2DC79CA698770 /* Pods-Clinic Check inUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SL85U59EL;
+				INFOPLIST_FILE = "Clinic Check inUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savantcareinc-grmtech.com.Clinic-Check-inUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Clinic Check in";
+			};
+			name = Debug;
+		};
+		4DC6322920809BD200414EB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBDEB95E6F31BB9D18CDACB /* Pods-Clinic Check inUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8SL85U59EL;
+				INFOPLIST_FILE = "Clinic Check inUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "savantcareinc-grmtech.com.Clinic-Check-inUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Clinic Check in";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC631F420809BD200414EB1 /* Build configuration list for PBXProject "Clinic Check in" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC6321F20809BD200414EB1 /* Debug */,
+				4DC6322020809BD200414EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC6322120809BD200414EB1 /* Build configuration list for PBXNativeTarget "Clinic Check in" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC6322220809BD200414EB1 /* Debug */,
+				4DC6322320809BD200414EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC6322420809BD200414EB1 /* Build configuration list for PBXNativeTarget "Clinic Check inTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC6322520809BD200414EB1 /* Debug */,
+				4DC6322620809BD200414EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC6322720809BD200414EB1 /* Build configuration list for PBXNativeTarget "Clinic Check inUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC6322820809BD200414EB1 /* Debug */,
+				4DC6322920809BD200414EB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC631F120809BD200414EB1 /* Project object */;
+}

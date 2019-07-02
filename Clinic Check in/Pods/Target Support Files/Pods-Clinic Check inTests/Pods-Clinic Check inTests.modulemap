@@ -1,0 +1,6 @@
+framework module Pods_Clinic_Check_inTests {
+  umbrella header "Pods-Clinic Check inTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

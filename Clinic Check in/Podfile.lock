@@ -1,0 +1,45 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - DynamicBlurView (2.0.2)
+  - MRCountryPicker (0.0.7)
+  - PopupDialog (0.7.1):
+    - DynamicBlurView (~> 2.0)
+  - SwiftyJSON (4.1.0)
+  - Toast-Swift (3.0.1)
+  - Toaster (2.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage (~> 3.0)
+  - MRCountryPicker (~> 0.0.7)
+  - PopupDialog (~> 0.7)
+  - SwiftyJSON
+  - Toast-Swift (~> 3.0.1)
+  - Toaster
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - AlamofireImage
+    - DynamicBlurView
+    - MRCountryPicker
+    - PopupDialog
+    - SwiftyJSON
+    - Toast-Swift
+    - Toaster
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  MRCountryPicker: 75edb510153ef446ded70890bc02140a757961dc
+  PopupDialog: 39598b7d41719f5c025b4b70e62728bae7734fef
+  SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+  Toaster: a6c9532de1ded8105e77376f7dffeb2e12b46dbb
+
+PODFILE CHECKSUM: 211e1c4208fcf7803e3ef20c103eb323d3bdfb4f
+
+COCOAPODS: 1.5.0
